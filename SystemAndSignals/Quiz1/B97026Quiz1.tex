@@ -1,0 +1,52 @@
+\input{preambulo.tex}
+
+% =============================================
+% ================= DOCUMENTO =================
+% =============================================
+
+\begin{document} 
+% =============================================
+% ================= PORTADA ===================
+% =============================================
+
+\begin{titlepage}
+  \centering
+  {\LARGE Universidad de Costa Rica \par} % Nombre de la universidad
+  {\Large Facultad de Ingeniería \par} % Facultad
+  {\Large Escuela de Ingeniería Eléctrica \par} % Escuela
+  {\Large IE0347 $-$ Señales y Sistemas II \par} % Escuela
+  \vspace{2cm}
+  
+  \includegraphics[width=0.3\textwidth]{IMG/imagen1.png} % Cambia "ruta/a/tu/logo" por la ruta a tu archivo de imagen del logo
+  \vspace{1cm}
+
+  {\huge\bfseries Quiz 1 \par} % Título del documento
+  \vspace{2cm}
+  
+  {\Large\ Estudiante: Ruiz Sánchez Junior Alfonso B97026 \par} % Nombre del estudiante
+  {\Large\ Profesor: Helber Meneses Navarro \par} % Nombre del profesor
+  \vfill
+  
+  {\large 30 de Mayo del 2024 \par} % Fecha
+  \vspace*{\fill}
+  
+\end{titlepage}
+
+\thispagestyle{empty} % No numerar la portada
+
+\renewcommand{\thepage}{\roman{page}}
+\newpage
+
+%%%%%%%%%%  
+\renewcommand{\thepage}{\arabic{page}} 
+\setcounter{page}{1}
+
+\newpage
+\input{preg_1}
+\newpage
+\input{preg_2}
+\newpage
+\input{preg_3}
+
+
+\end{document}

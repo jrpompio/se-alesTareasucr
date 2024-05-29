@@ -1,0 +1,92 @@
+\section{Simulación de circuito mediante diagrama de bloques}
+
+
+\begin{figure}[H]\label{fig:rectificador}
+    \centering
+    \includegraphics[width=0.5\textwidth]{imagenes/circuito.png}
+    \caption{Circuito rectificador}
+\end{figure}
+
+Valores:
+
+\begin{equation*}
+    n = 1 \hspace{1cm} R = 100\, k \Omega \hspace{1cm} I_s = 10 ^ {-12} \, A
+    \hspace{1cm} C = 1\, \mu F
+\end{equation*}
+
+\begin{equation*}
+   q = 1, 602176565 \times 10 ^ {-19} C
+   \hspace{1cm}
+   k = 1, 3806488 \times 10^ {23} \dfrac{J}{K}
+\end{equation*}
+
+Equaciones: \\
+
+\begin{multicols}{2}
+
+\begin{equation*}
+    I_d = I_s \left(e ^{
+        \frac{V_d}{nV_T}
+        } - 1 \right)
+\end{equation*}
+
+\begin{equation*}
+V_T = \frac{kT}{q}    
+\end{equation*}
+
+\end{multicols}
+
+Modelo del sistema:
+
+\begin{equation*}
+    C\:\frac{dV_{out}\left(t\right)}{dt}+\frac{1}{R}V_{out}\left(t\right)
+    =
+    I_s \left(e ^{
+    \frac{V_{in}\left(t\right)-V_{out}\left(t\right)}
+    {nV_T}
+    } - 1 \right)
+\end{equation*}
+
+\begin{equation}
+    \frac{dV_{out}(t)}{dt} = \frac{I_s}{C} \left( e^{\frac{V_{in}(t) - V_{out}(t)}{nV_T}} - 1 \right) - \frac{1}{RC}V_{out}(t)
+\end{equation}
+
+\subsection{Diagrama en simulink}
+
+\begin{figure}[H]\label{fig:Diagrama}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/Diagrama.png}
+    \caption{Diagrama generado en simulink}
+\end{figure}
+
+Mediante la ecuación (1) se realiza el estado Vout\_dot para después integrarlo, obtener vout 
+y retroalimentarlo en donde es necesario.
+
+\subsection{Resultados}
+\begin{figure}[H]\label{fig:voutVin}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/VoutVin.jpg}
+    \caption{Tensión de entrada del circuito y tensión de salida
+    del circuito vs tiempo}
+\end{figure}
+
+Se puede notar que efectivamente la tensión de entrada es de media onda, 
+la tensión de salida es una onda rectificada con un rizado notable.
+Los resultados son los esperados.
+
+\begin{figure}[H]\label{fig:vd}
+    \centering
+    \includegraphics[width=0.9\textwidth]{imagenes/VD.jpg}
+    \includegraphics[width=0.9\textwidth]{imagenes/ID.jpg}
+    \includegraphics[width=0.9\textwidth]{imagenes/IR.jpg}
+    
+    \caption{Tensión del diodo y corriente del diodo vs tiempo}
+\end{figure}
+
+La tensión del diodo oscila, pero las zonas significativas son cuando la 
+tensión de este es mayor a cero, se puede notar que en esos momentos 
+hay corriente atravezando el diodo. Mientras que en las zonas en las que no hay
+corriente es debido a que la tensión en el diodo es negativa por lo qué este no
+se polariza, además la corriente de la carga tiene el mismo comportamiento que
+la tensión de salida, pero con magnitud 100k veces menor,
+es por esto que los resultados son los esperados.
