@@ -11,7 +11,6 @@
 | **Integrantes**         | Juan Pérez, Ana Gómez, Luis Torres |
 |                         | Juan Pérez, Ana Gómez, Luis Torres |
 |                         | Juan Pérez, Ana Gómez, Luis Torres |
-|------------------------|----------------------------|
 
 ## Descripción
 Añade aquí una breve descripción del proyecto.
