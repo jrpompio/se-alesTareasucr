@@ -1,7 +1,6 @@
 # Diseño de un bloque de PCS tipo 1000BASE-X
 
 
-| Información            | Detalles                               |
 |------------------------|----------------------------------------|
 | **Universidad**        | Universidad de Costa Rica              |
 | **Carrera**            | Ingeniería Eléctrica                   |
