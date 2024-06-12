@@ -1,10 +1,12 @@
-# Diseño de un bloque de PCS tipo 1000BASE-X
+# Proyecto final
+
+## Información
 
 |                        |                                        |
 |------------------------|----------------------------------------|
 | **Universidad**        | Universidad de Costa Rica              |
 | **Carrera**            | Ingeniería Eléctrica                   |
-| **Curso**              | IE-0523 Circuitos Digitales II c       |
+| **Curso**              | Circuitos Digitales II - IE-0523       |
 | **Nombre del proyecto**| Diseño de un bloque de PCS tipo 1000BASE-X |
 |                        |                                        |
 |                        |                                        |
