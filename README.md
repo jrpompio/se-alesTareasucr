@@ -1,16 +1,8 @@
-# Proyecto XYZ
-
-## Tabla de Contenido
-1. [Portada](#portada)
-2. [Descripción](#descripción)
-3. [Instrucciones](#instrucciones)
-4. [Instalación](#instalación)
-5. [Uso](#uso)
-6. [Licencia](#licencia)
+# Diseño de un bloque de PCS tipo 1000BASE-X
 
 ## Portada
 
-| Información            | Detalles                   |
+|             |                    |
 |------------------------|----------------------------|
 | **Nombre de universidad** | Universidad de Ejemplo      |
 | **Carrera**             | Ingeniería en Computación  |
@@ -21,14 +13,3 @@
 ## Descripción
 Añade aquí una breve descripción del proyecto.
 
-## Instrucciones
-Proporciona aquí las instrucciones para usar o contribuir al proyecto.
-
-## Instalación
-Describe aquí cómo instalar el proyecto.
-
-## Uso
-Explica aquí cómo usar el proyecto.
-
-## Licencia
-Indica aquí la licencia del proyecto.
