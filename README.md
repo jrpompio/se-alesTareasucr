@@ -13,6 +13,8 @@
 | **Integrantes**        | Juan Pérez, Ana Gómez, Luis Torres     |
 |                        | Juan Pérez, Ana Gómez, Luis Torres     |
 |                        | Juan Pérez, Ana Gómez, Luis Torres     |
+<!-- Agregar nombres en orden albetico, si ven que se debe desplazar
+a uno hacia abajo, no importa -->
 
 ## Descripción
 Añade aquí una breve descripción del proyecto.
