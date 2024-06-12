@@ -10,8 +10,8 @@
 | **Nombre del proyecto**| Diseño de un bloque de PCS tipo 1000BASE-X |
 |                        |                                        |
 |                        |                                        |
-| **Integrantes**        |  Ruiz Sánchez Junior Alfonso           |
-|                        |  Bonilla Vega Sebastian                |
+| **Integrantes**        |  Bonilla Vega Sebastian                |
+|                        |  Ruiz Sánchez Junior Alfonso           |
 |                        |  Apellido Apellido Andrés              |
 
 <!-- Agregar nombres en orden albetico, si ven que se debe desplazar
